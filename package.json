@@ -1,0 +1,18 @@
+{
+  "name": "typecoffeeredux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cake build; cake build:parser; cake build:browser; coffee parseTest.coffee",
+    "start": "http-server -p 8000 &",
+    "stop": "killall -- node */http-server -p 8000"
+  },
+  "author": "legokichi",
+  "license": "MIT",
+  "dependencies": {
+    "coffee-script-redux": "^2.0.0-beta8",
+    "pegjs": "^0.9.0",
+    "pegjs-each-code": "^0.3.0"
+  }
+}
